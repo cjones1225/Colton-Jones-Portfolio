@@ -12,9 +12,9 @@ $(window).on('resize scroll', function() {
   $('.container').each(function() {
       var activeContainer = $(this).attr('id');
       if ($(this).isInViewport()) {
-          $('fixed-'+ activeContainer).addClass("active");
+          $('a').addClass("active");
       } else {
-          $('fixed-' + activeContainer).removeClass("active");
+          $('a').removeClass("active");
     }
   });
 });
