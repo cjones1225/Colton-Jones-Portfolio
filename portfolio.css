@@ -66,7 +66,7 @@ p.bio {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -101,7 +101,7 @@ p.projects {
 }
 @media only screen and (max-width: 1200px) {
     p.bio {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 800px) {
