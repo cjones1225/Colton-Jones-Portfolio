@@ -12,9 +12,11 @@ $(window).on('resize scroll', function() {
   $('.container').each(function() {
       var activeContainer = $(this).attr('id');
       if ($(this).isInViewport()) {
-          $('a').addClass("active");
+          if ($('h1').parent('a').hasClass(activeContainer))
+                $('h1').parent('a').addClass("active");
       } else {
-          $('a').removeClass("active");
+          if ($('h1').parent('a').hasClass(activeContainer))
+                $('h1').parent('a').removeClass("active");
     }
   });
 });
